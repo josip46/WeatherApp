@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The weather app</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="mystyle.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1 class="title">THE WEATHER APP</h1>
+    <div class="search-container">
+      <input
+        type="text"
+        class="search-bar"
+        placeholder="Search..."
+        id="search"
+      />
+      <button class="search-button" id="searchBtn">Search</button>
+    </div>
+    <p class="time"></p>
+    <div class="bigbigContainer">
+      <p class="location">Your location</p>
+      <div class="mainFront">
+        <div class="mainContainer fade-in">
+          <img src="" class="iconNow" />
+          <div class="statsContainer">
+            <div class="stats">
+              <img src="icons/wind.svg" class="statsIcon" />
+              <p class="windSpeed"></p>
+            </div>
+            <div class="stats">
+              <img src="icons/humidity.svg" class="statsIcon" />
+              <p class="humidity"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="week">
+      <p id="today" class="day">Today</p>
+      <p class="day">Tomorrow</p>
+      <p class="thirdDay day"></p>
+      <p class="fourthDay day"></p>
+      <p class="fifthDay day"></p>
+    </div>
+    <div class="weekContainer"></div>
+  </body>
+</html>

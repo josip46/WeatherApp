@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.title {
+  font-size: 60px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-family: 'Montserrat';
+  color: rgba(0, 0, 0, 0.647);
+}
+
+.search-bar {
+  width: 350px;
+  padding: 10px;
+  border: 2px solid rgb(74, 74, 74);
+  border-radius: 25px;
+  outline: none;
+  font-size: 16px;
+  z-index: 1;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-button {
+  background-color: rgb(74, 74, 74);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-left: -40px;
+  z-index: 2;
+}
+
+.time {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+
+.iconNow {
+  width: 230px;
+  margin-left: auto;
+}
+
+.location {
+  padding-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.statsIcon {
+  width: 50px;
+  padding-right: 15px;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.statsContainer {
+  margin-right: auto;
+  padding-left: 50px;
+  display: grid;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+}
+
+.currentTemp {
+  font-size: 1.2rem;
+}
+
+.week {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 20px;
+}
+
+.smallIcon {
+  width: 60px;
+}
+
+.weekContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 8%;
+}
+.day {
+  padding: 5px;
+  width: 130px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.dayContainer {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  width: 130px;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.dayContainer:hover {
+  transform: translateY(-5px);
+}
+
+.fiveTemps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.maxTemp {
+  padding-right: 10px;
+  font-weight: 550;
+}
+.minTemp {
+  padding-left: 10px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bigbigContainer {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 40%;
+  margin-left: 30%;
+  border-radius: 20px;
+}
+
+@media (max-width: 1000px) {
+  .bigbigContainer {
+    width: 100%;
+    height: auto;
+    margin: 5%;
+  }
+}
